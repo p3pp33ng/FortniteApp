@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-
+using FortniteApp.Pages;
 using Xamarin.Forms;
 
 namespace FortniteApp
@@ -11,9 +11,7 @@ namespace FortniteApp
 	{
 		public App ()
 		{
-			InitializeComponent();
-
-			MainPage = new FortniteApp.MainPage();
+            MainPage = new NavigationPage(new MainPage());
 		}
 
 		protected override void OnStart ()
